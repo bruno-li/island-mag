@@ -30,19 +30,14 @@ body {
     .navbar__sub-container__top {
       display: flex;
       align-items: center;
-      flex: 3;
       list-style: none; }
       .navbar__sub-container__top .navbar-hamburger {
         margin-left: 3rem;
         margin-right: 1.5rem; }
         .navbar__sub-container__top .navbar-hamburger-logo {
           width: 20px; }
-        .navbar__sub-container__top .navbar-hamburger--pad {
-          padding: 0; }
       .navbar__sub-container__top .navbar-logo {
         margin-right: auto; }
-        .navbar__sub-container__top .navbar-logo--pad {
-          padding: 0; }
         .navbar__sub-container__top .navbar-logo__img {
           width: 140px; }
     .navbar__sub-container__bottom {
@@ -67,22 +62,6 @@ body {
           text-decoration: none; }
           .navbar__sub-container__bottom .navbar-list__link:hover {
             color: #44b27b; }
-        .navbar__sub-container__bottom .navbar-list--active {
-          text-decoration: none;
-          color: #44b27b;
-          margin-left: 1rem; }
-        .navbar__sub-container__bottom .navbar-list__icon {
-          display: flex;
-          align-items: center;
-          margin-right: 40px;
-          padding: 0; }
-          .navbar__sub-container__bottom .navbar-list__icon__mag {
-            margin-top: 3px;
-            height: 40px; }
-          .navbar__sub-container__bottom .navbar-list__icon__search {
-            margin-left: 30px;
-            margin-right: 50px;
-            height: 18px; }
 
 .main-container {
   margin: 0 auto;

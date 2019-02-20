@@ -22,7 +22,6 @@
         &__top {
             display: flex;
             align-items: center;
-            flex: 3;
             list-style: none;
 
             .navbar-hamburger{
@@ -31,25 +30,16 @@
                 &-logo {
                     width: 20px;
                 }
-                &--pad {
-                    padding: 0;
-                }
             }
-
             .navbar-logo{
                 margin-right: auto;
-
-                &--pad {
-                    padding: 0;
-                }
                 &__img{
                     width: 140px;
                 }
             }
-
         }
 
-        //  RIGHT NAVBAR
+        //  BOTTOM NAVBAR
         &__bottom {
             margin-top: 2.4rem;
             display: flex;
@@ -75,29 +65,6 @@
                             color: $color-primary-green;
                         }
                     }
-
-                    &--active{
-                        text-decoration: none;
-                        color: $color-primary-green;
-                        margin-left: 1rem;
-                    }
-
-                &__icon {
-                    display: flex;
-                    align-items: center;
-                    margin-right: 40px;
-                    padding: 0;
-
-                        &__mag {
-                            margin-top: 3px;
-                            height: 40px; 
-                        }
-                        &__search {
-                            margin-left: 30px;
-                            margin-right: 50px;
-                            height: 18px; 
-                        }
-                 }
             }
         }
     }
