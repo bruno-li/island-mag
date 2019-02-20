@@ -11,57 +11,51 @@ body {
   box-sizing: border-box; }
 
 .navbar {
+  font-family: "Lato", sans-serif;
   width: 100%;
-  height: 3rem;
+  height: 40px;
   background: #fff;
-  box-shadow: 0 2px 5px 0 rgba(216, 216, 218, 0.7); }
+  border-bottom: 1px solid #F2F2F2; }
   .navbar__sub-container {
     display: flex;
     position: fixed;
     top: 0;
     margin: auto;
     width: 100%;
-    height: 50px;
-    align-items: center;
+    height: 100px;
     justify-content: space-between;
-    background: #fff;
+    background: #FFF;
     color: rgba(0, 0, 0, 0.95);
-    box-shadow: 0 2px 5px 0 rgba(216, 216, 218, 0.7); }
+    background-color: #F2F2F2; }
     .navbar__sub-container__top {
       display: flex;
       align-items: center;
       list-style: none; }
       .navbar__sub-container__top .navbar-hamburger {
-        margin-left: 3rem;
-        margin-right: 1.5rem; }
+        margin-left: 200px;
+        margin-right: 20px; }
         .navbar__sub-container__top .navbar-hamburger-logo {
-          width: 20px; }
+          width: 22px; }
       .navbar__sub-container__top .navbar-logo {
         margin-right: auto; }
         .navbar__sub-container__top .navbar-logo__img {
-          width: 140px; }
+          width: 188px; }
     .navbar__sub-container__bottom {
-      margin-top: 2.4rem;
+      margin-top: 105px;
       display: flex;
-      align-items: center;
       justify-content: center;
-      list-style: none;
-      flex: 1; }
+      list-style: none; }
       .navbar__sub-container__bottom .navbar-list {
-        font-family: "Roboto", sans-serif;
-        font-size: 12px;
-        line-height: 24px;
-        font-weight: 900;
+        font-size: 15px;
+        line-height: 15px;
         list-style: none;
-        padding: 12px 8px;
-        letter-spacing: 1px;
+        padding: 10px 16px;
         text-transform: uppercase; }
         .navbar__sub-container__bottom .navbar-list__link {
-          display: inline-block;
           color: rgba(0, 0, 0, 0.95);
           text-decoration: none; }
           .navbar__sub-container__bottom .navbar-list__link:hover {
-            color: #44b27b; }
+            color: #2a8da1; }
 
 .main-container {
   margin: 0 auto;
