@@ -1,0 +1,32 @@
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    border-top: 1px solid #9A9A9A;
+ 
+    .figure {
+        margin: 0 auto;
+        &__logo{
+            display: block;
+            margin-top: 2rem;
+            width: 200px;
+            margin-bottom: 1rem;
+        }
+        &__social{
+            width: 200px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .copyright{
+        width: 60%;
+        margin: 1rem auto;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 10px;
+        line-height: 20px;
+        color: #8b8d91;
+
+    }
+}

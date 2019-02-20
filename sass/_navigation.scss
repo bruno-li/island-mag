@@ -1,0 +1,110 @@
+.navbar {
+    width: 100%;
+    height: 3rem;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 hsla(240, 3%, 85%, .7);
+
+    // SUB CONTAINER
+    &__sub-container {
+        display: flex;
+        position: fixed;
+        top: 0;
+        margin: auto;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        color: $color-primary-black;
+        box-shadow: 0 2px 5px 0 hsla(240, 3%, 85%, .7); 
+
+        // TOP NAVBAR
+        &__top {
+            display: flex;
+            align-items: center;
+            flex: 3;
+            list-style: none;
+
+            .navbar-hamburger{
+                margin-left: 3rem;
+                margin-right: 1.5rem;
+                &-logo {
+                    width: 20px;
+                }
+                &--pad {
+                    padding: 0;
+                }
+            }
+
+            .navbar-logo{
+                margin-right: auto;
+
+                &--pad {
+                    padding: 0;
+                }
+                &__img{
+                    width: 140px;
+                }
+            }
+
+        }
+
+        //  RIGHT NAVBAR
+        &__bottom {
+            margin-top: 2.4rem;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            list-style: none;
+            flex: 1;
+
+            .navbar-list{
+                    font-family: "Roboto", sans-serif;
+                    font-size: 12px;
+                    line-height: 24px;
+                    font-weight: 900;
+                    list-style: none;
+                    padding: 12px 8px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    &__link{
+                        display: inline-block;
+                        color: $color-primary-black;
+                        text-decoration: none;
+                        &:hover {
+                            color: $color-primary-green;
+                        }
+                    }
+
+                    &--active{
+                        text-decoration: none;
+                        color: $color-primary-green;
+                        margin-left: 1rem;
+                    }
+
+                &__icon {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 40px;
+                    padding: 0;
+
+                        &__mag {
+                            margin-top: 3px;
+                            height: 40px; 
+                        }
+                        &__search {
+                            margin-left: 30px;
+                            margin-right: 50px;
+                            height: 18px; 
+                        }
+                 }
+            }
+        }
+    }
+}
+
+
+
+
+
+
