@@ -2,6 +2,7 @@
     margin: 0 auto;
     width: 70%;
 
+
 .header {
   
     font-family: "Lato", sans-serif;
@@ -26,9 +27,6 @@
         color: #000;
         margin: 0;
         margin-bottom: 4px;
-        @include respond(small-phone){
-            font-size: 38px;
-        }
     }
     &__paragraph{
         font-size: 24px;
@@ -64,8 +62,7 @@
 ////////// MAIN CONTENT ////////////
 .main-content {
     font-family: "PT Serif",serif;
-    // border: 2px solid rebeccapurple;
-    margin: 20px auto;
+    margin: 20px 50px;
     max-width: 710px;
 
     &__paragraph {
@@ -177,28 +174,110 @@
    
     }
 
-
     .latest{
+        font-family: "Lato", sans-serif;
+        color: #000;
+        margin-bottom: 30px;
         &__heading{
+            font-size: 18px;
+            line-height: 27px;
             border-bottom: 1px solid #EEE;
             padding-bottom: 8px;
-            width: 1000px;
+            width: 911px;
         }
         &__figure__container{
             display: flex;   
         }
         &__figure{
             margin: 10px 20px 10px 0;
-             
-
+        
             &__img{
                 width: 290px;
             }
             &__caption{
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 700;
+                padding-top: 3px;
 
             }
         }
    
+    }
+
+    .more-stories{
+        display: flex;
+        width: 130%;
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+
+        &__list{
+            list-style: none;
+            width: 60%;
+
+            &__heading{
+                font-family: "Lato", sans-serif;
+                font-weight: 700;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #EEE;
+
+            }
+
+            &__items{
+                font-weight: 700;
+                margin-bottom: 34px;
+
+                &__link{
+                    text-decoration: none;
+                    color: #000;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+        }
+
+        &__videos{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 20px;
+            width: 70%;
+            
+            &__heading{
+                font-family: "Lato", sans-serif;
+                font-size: 20px;
+                line-height: 24px;
+                flex-basis: 100%;
+                padding-bottom: 3px;
+                border-bottom: 1px solid #EEE;
+
+            }
+
+            .figure__videos{
+                flex:  1 0 50%;
+                margin-top: 15px;
+                &__img{
+                    width: 225px;
+                }
+                &__caption{
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    &__link{
+                        text-decoration: none;
+                        color: #000;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+            }
+
+        }
     }
 
  
