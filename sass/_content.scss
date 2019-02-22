@@ -5,10 +5,20 @@
     @include respond(tab-port){
         width: 90%;
     }
+    @include respond(small-phone){
+        width: 585px;
+        margin-left: 20px;
+    }
 
+    // HEADER SECTION
 .header {
     font-family: "Lato", sans-serif;
     margin: 60px 0;
+    // MEDIA QUERIES
+    @include respond(small-phone){
+        margin-top: 120px;
+
+    }
     &__link{
         font-family: "PT Serif",serif;
         &__text{
@@ -18,6 +28,9 @@
             text-decoration: none;
             &:hover{
                 text-decoration: underline;
+            }
+            @include respond(small-phone){
+                font-size: 22px;
             }
         }
     }
@@ -29,17 +42,36 @@
         color: $color-primary-black;
         margin: 0;
         margin-bottom: 4px;
+        // MEDIA QUERIES
+        @include respond(small-phone){
+            font-size: 58px;
+            line-height: 71px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+        }
     }
     &__paragraph{
         font-size: 24px;
         line-height: 28px;
         color: #6d6e72;
+        // MEDIA QUERIES
+        @include respond(small-phone){
+            font-size: 38px;
+            line-height: 43px;
+            margin-bottom: 20px;
+        }
     }
 
     &__social-media {
         &__icons {
             width: 245px;
+            @include respond(small-phone){
+                width: 450px;
+            }
         }
+        @include respond(small-phone){
+           margin-top: 20px;
+        }   
     }
 
     &__author{
@@ -57,6 +89,12 @@
                 color: #49b8cf;
             }
         }
+
+        @include respond(small-phone){
+            font-size: 26px;
+            line-height: 24px;  
+            margin: 40px 0;      
+         }  
     }
 }
 
@@ -65,8 +103,11 @@
 .main-content {
     font-family: "PT Serif",serif;
     margin: 20px 0px;
-    width: 710px;
-
+    width: 900px;
+    // MEDIA QUERIES
+    @include respond(tab-port){
+        width: 100%;
+    }
 
 
     &__paragraph {
@@ -74,6 +115,11 @@
         line-height: 27px;
         margin: 30px 0;
         color: $color-primary-black;
+        // MEDIA QUERIES
+        @include respond(small-phone){
+            font-size: 30px;
+            line-height: 49px;     
+         }  
     }
 
 
@@ -81,16 +127,20 @@
         font-family: "Lato", sans-serif;
         color: $color-primary-black;
         margin-bottom: 40px;
+        width: 100%;
         // MEDIA QUERIES
         @include respond(tab-port){
-            width: 919px;
+            width: 100%;
         }
-
-
         &__heading{
             font-size: 20px;
             line-height: 24px;
             margin-bottom: 13px;
+
+            @include respond(small-phone){
+                font-size: 34px;
+                margin-bottom: 30px;
+             }  
         }
         
         &__image{
@@ -107,12 +157,21 @@
                 padding-bottom: 11px;
                 font-size: 16px;
                 line-height: 24px;
+            // MEDIA QUERIES
+            @include respond(small-phone){
+                font-size: 27px;
+                line-height: 42px;
+             } 
             }
-
             &__credit{
                 font-size: 14px;
                 line-height: 14px;
                 font-style: italic;
+                // MEDIA QUERIES
+                @include respond(small-phone){
+                    font-size: 22px;
+                    line-height: 38px;
+                 } 
             }
         }
     }
@@ -125,17 +184,29 @@
         font-family: "Lato", sans-serif;
         margin: 50px 0;
 
+        @include respond(small-phone){
+            height: 570px;
+            margin-top: 100px;
+        }
+
         &__figure{
+            align-self: flex-start;
             &__heading{
                 font-size: 24px;
                 line-height: 29px;
                 color: #373b40;
                 margin-bottom: 10px;
-
+                @include respond(small-phone){
+                    font-size: 38px;
+                    margin-bottom: 24px;
+                 } 
             }
             &__img{
                 width: 290px;
-
+                @include respond(small-phone){
+                    width: 230px;
+                 } 
+                
             }
         }
 
@@ -147,14 +218,17 @@
                 font-size: 15px;
                 line-height: 23px;
 
+                @include respond(small-phone){
+                    font-size: 22px;
+                    margin-bottom: 12px;
+                 } 
+
                 &__link{
                     text-decoration: none;
                     color: #49b8cf;
                     &:hover{
                         text-decoration: underline;
                     }
-
-
                 }
             }
 
@@ -168,6 +242,11 @@
                     &:hover{
                         text-decoration: underline;
                     }
+                    // MEDIA QUERIES
+                    @include respond(small-phone){
+                        font-size: 34px;
+                        line-height: 38px;
+                     } 
                 }
             }
 
@@ -176,81 +255,137 @@
                 font-size: 14px;
                 line-height: 21px;
                 color: $color-primary-black;
+
+              // MEDIA QUERIES
+              @include respond(small-phone){
+                font-size: 23px;
+                line-height: 36px;
+                margin-top: 10px;
+             }              
             }
         }
 
    
     }
-
+    // LATEST SECTION
     .latest{
         font-family: "Lato", sans-serif;
         color: $color-primary-black;
         margin-bottom: 30px;
+
         &__heading{
             font-size: 18px;
             line-height: 27px;
             border-bottom: 1px solid #EEE;
             padding-bottom: 8px;
             width: 911px;
+            @include respond(phone){
+                width: 720px;
+            }
+
+            @include respond(small-phone){
+               font-size: 36px;
+               padding-bottom: 15px;
+               width: 600px;
+
+            }
         }
+        
+
         &__figure__container{
             display: flex;   
+            @include respond(small-phone){
+                flex-direction: column;
+            }
+    
         }
+
         &__figure{
             margin: 10px 20px 10px 0;
+            @include respond(small-phone){
+                display: flex;
+                padding-bottom: 20px;
+                &:not(:last-child){
+                    border-bottom: 1px solid #EEE;
+                }
+            }
         
             &__img{
                 width: 290px;
+                @include respond(phone){
+                    width: 225px;
+                }
+                @include respond(small-phone){
+                    width: 250px;
+                    height: 100%;
+                }
             }
             &__caption{
                 font-size: 18px;
                 line-height: 24px;
                 font-weight: 700;
                 padding-top: 3px;
-
+                @include respond(small-phone){
+                    margin-left: 10px;
+                    font-size: 32px;
+                    line-height: 42px;
+                }
             }
         }
    
     }
 
-
+    // MORE STORIES SECTION
     .more-stories{
         display: flex;
         justify-content: space-between;
-        width: 155%;
+        align-content: center;        
         font-family: "Lato", sans-serif;
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 100px;
+
         // MEDIA QUERIES
         @include respond(tab-port){
             justify-content: space-evenly;
-            width: 129.5%;
-
+        }
+        @include respond(phone){
+            flex-direction: column;
         }
 
-
-
         &__list{
-            list-style: none;            
+            list-style: none;    
+        
             // MEDIA QUERIES
             @include respond(tab-port){
                 font-size: 19px;
                 width: 42%;
                 line-height: 23px;
+            }
+            @include respond(phone){
+                width: 100%;
+            }
 
+            @include respond(small-phone){
+                font-size: 32px;
+                line-height: 42px;
             }
 
             &__heading{
                 font-family: "Lato", sans-serif;
                 font-weight: 700;
                 margin-bottom: 15px;
-                padding-bottom: 17.5px;
+                padding-bottom: 10px;
                 border-bottom: 1px solid #EEE;
                 // MEDIA QUERIES
                 @include respond(tab-port){
                     padding-bottom: 5px;
                 }
+                @include respond(small-phone){
+                    font-size: 36px;
+                    padding-bottom: 15px;
+                    width: 600px;
+                 }
 
             }
 
@@ -272,41 +407,53 @@
         &__videos{
             display: flex;
             flex-wrap: wrap;
-            margin-left: 30px;
-            width: 70%;
+            margin-left: 25px;
+            width: 100%;
+
             // MEDIA QUERIES
             @include respond(tab-port){
                 width: 53%;
+            }
+            @include respond(phone){
+                margin-top: 30px;
+                margin-left: 0;
+                width: 100%;
             }
             
             &__heading{
                 font-family: "Lato", sans-serif;
                 font-size: 20px;
                 line-height: 23px;
+                padding-bottom: 10px;
                 flex-basis: 100%;
                 border-bottom: 1px solid #EEE;
-
+                   // MEDIA QUERIES
+                   @include respond(tab-port){
+                   padding-bottom: 5px;
+                }
+                @include respond(small-phone){
+                    font-size: 32px;
+                    padding-bottom: 20px;
+                }
             }
 
             .figure__videos{
                 flex:  1 0 43%;
                 margin-top: 15px;
                 &__img{
-                    width: 250px;
-                    // MEDIA QUERIES
-                    @include respond(tab-port){
-                        width: 230px;
-                    }
+                    width: 100%;
+                    padding: 8px;     
                 }
                 &__caption{
-                    font-size: 20px;
+                    font-size: 19px;
                     line-height: 24px;
                     font-weight: 700;
+                    text-align: center;
+
                     // MEDIA QUERIES
                     @include respond(tab-port){
                         font-size: 18px;
                         line-height: 22px;
-
                     }
                     &__link{
                         text-decoration: none;

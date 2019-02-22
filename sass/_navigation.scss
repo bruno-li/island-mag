@@ -5,7 +5,6 @@
     background: #fff;
     border-bottom: 1px solid #F2F2F2;
  
-
     // SUB CONTAINER
     &__sub-container {
         display: flex;
@@ -19,6 +18,9 @@
         // MEDIA QUERIES
         @include respond(tab-port){
             height: 60px;
+        }
+        @include respond(small-phone){
+            height: 95px;
         }
    
 
@@ -35,8 +37,18 @@
                 @include respond(tab-port){
                     margin: 12px 410px 5px 14px;
                 }
+                @include respond(phone){
+                    margin-right: 300px;
+                }
+                @include respond(small-phone){
+                    margin-right: 150px;
+                }
                 &-logo {
                     width: 26px;
+                    @include respond(small-phone){
+                        width: 42px;
+                        margin-left: 10px;
+                    }
                 }
             }
             .navbar-logo{
@@ -46,6 +58,9 @@
                     // MEDIA QUERIES
                     @include respond(tab-port){
                         width: 122px;
+                    }
+                    @include respond(small-phone){
+                        width: 205px;
                     }
                 }
             }
