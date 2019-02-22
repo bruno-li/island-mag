@@ -4,6 +4,7 @@
     height: 40px;
     background: #fff;
     border-bottom: 1px solid #F2F2F2;
+ 
 
     // SUB CONTAINER
     &__sub-container {
@@ -15,6 +16,11 @@
         background: #FFF;
         color: $color-primary-black;
         background-color: #F2F2F2;
+        // MEDIA QUERIES
+        @include respond(tab-port){
+            height: 60px;
+        }
+   
 
         // TOP NAVBAR
         &__top {
@@ -25,14 +31,22 @@
             .navbar-hamburger{
                 margin-left:330px;
                 margin-right: 15px;
+                // MEDIA QUERIES
+                @include respond(tab-port){
+                    margin: 12px 410px 5px 14px;
+                }
                 &-logo {
-                    width: 28px;
+                    width: 26px;
                 }
             }
             .navbar-logo{
                 margin-right: auto;
                 &__img{
                     width: 188px;
+                    // MEDIA QUERIES
+                    @include respond(tab-port){
+                        width: 122px;
+                    }
                 }
             }
         }
@@ -43,6 +57,10 @@
             justify-content:center;
             margin-top: 105px;
             list-style: none;
+            // MEDIA QUERIES
+             @include respond(tab-port){
+                display: none;
+            }
             .navbar-list{
                     font-size: 15px;
                     line-height: 15px;

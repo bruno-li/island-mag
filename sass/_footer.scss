@@ -3,6 +3,11 @@
     width: 70%;
     margin: 0 200px;
     border-top: 1px solid #EEE;
+    // MEDIA QUERIES
+    @include respond(tab-port){
+        width: 90%;
+        margin: 0 auto;
+    }
 
     .figure__footer {
         display: flex;
