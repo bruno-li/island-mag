@@ -1,5 +1,5 @@
 .main-container {
-    // margin: 0 auto;
+    margin: 0 auto;
     width: 70%;
     // MEDIA QUERIES
     @include respond(tab-port){
@@ -7,7 +7,6 @@
     }
     @include respond(small-phone){
         width: 100%;
-        border: 2px solid red;
     }
 
     // HEADER SECTION
@@ -17,7 +16,6 @@
     // MEDIA QUERIES
     @include respond(small-phone){
         margin-top: 120px;
-
     }
     &__link{
         font-family: "PT Serif",serif;
