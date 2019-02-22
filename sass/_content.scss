@@ -1,13 +1,13 @@
 .main-container {
-    margin: 0 auto;
+    // margin: 0 auto;
     width: 70%;
     // MEDIA QUERIES
     @include respond(tab-port){
         width: 90%;
     }
     @include respond(small-phone){
-        width: 585px;
-        margin-left: 20px;
+        width: 100%;
+        border: 2px solid red;
     }
 
     // HEADER SECTION
@@ -64,9 +64,9 @@
 
     &__social-media {
         &__icons {
-            width: 245px;
+            width: 23%;
             @include respond(small-phone){
-                width: 450px;
+                width: 65%;
             }
         }
         @include respond(small-phone){
@@ -204,7 +204,7 @@
             &__img{
                 width: 290px;
                 @include respond(small-phone){
-                    width: 230px;
+                    width: 100%;
                  } 
                 
             }
@@ -278,16 +278,14 @@
             line-height: 27px;
             border-bottom: 1px solid #EEE;
             padding-bottom: 8px;
-            width: 911px;
+            width: 100%;
             @include respond(phone){
                 width: 720px;
             }
-
             @include respond(small-phone){
                font-size: 36px;
                padding-bottom: 15px;
-               width: 600px;
-
+               width: 100%;
             }
         }
         
@@ -309,14 +307,10 @@
                     border-bottom: 1px solid #EEE;
                 }
             }
-        
             &__img{
-                width: 290px;
-                @include respond(phone){
-                    width: 225px;
-                }
+                width: 100%;
                 @include respond(small-phone){
-                    width: 250px;
+                    width:  60%;
                     height: 100%;
                 }
             }

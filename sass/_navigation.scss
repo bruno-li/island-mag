@@ -4,7 +4,6 @@
     height: 40px;
     background: #fff;
     border-bottom: 1px solid #F2F2F2;
- 
     // SUB CONTAINER
     &__sub-container {
         display: flex;
@@ -21,9 +20,9 @@
         }
         @include respond(small-phone){
             height: 95px;
-        }
-   
+            width: 100%;
 
+        }
         // TOP NAVBAR
         &__top {
             display: flex;
@@ -41,12 +40,12 @@
                     margin-right: 300px;
                 }
                 @include respond(small-phone){
-                    margin-right: 150px;
+                    margin-right: 3.2rem;
                 }
                 &-logo {
                     width: 40px;
                     @include respond(small-phone){
-                        width: 54px;
+                        width: 40px;
                         margin-left: 10px;
                     }
                 }
@@ -60,7 +59,7 @@
                         width: 122px;
                     }
                     @include respond(small-phone){
-                        width: 205px;
+                        width: 50%;
                     }
                 }
             }
