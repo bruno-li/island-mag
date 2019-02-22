@@ -68,14 +68,14 @@ body {
           .navbar__sub-container__top .navbar-hamburger {
             margin-right: 150px; } }
         .navbar__sub-container__top .navbar-hamburger-logo {
-          width: 26px;
+          width: 40px;
           /* Extra Small Devices, Phones */
           /* Small Devices, Tablets */
           /* Medium Devices */
           /* Large Devices, Wide Screens */ }
           @media (max-width: 512px) {
             .navbar__sub-container__top .navbar-hamburger-logo {
-              width: 42px;
+              width: 54px;
               margin-left: 10px; } }
       .navbar__sub-container__top .navbar-logo {
         margin-right: auto; }

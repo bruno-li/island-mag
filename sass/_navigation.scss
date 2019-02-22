@@ -44,9 +44,9 @@
                     margin-right: 150px;
                 }
                 &-logo {
-                    width: 26px;
+                    width: 40px;
                     @include respond(small-phone){
-                        width: 42px;
+                        width: 54px;
                         margin-left: 10px;
                     }
                 }
