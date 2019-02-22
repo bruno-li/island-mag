@@ -20,19 +20,17 @@ body {
     display: flex;
     position: fixed;
     top: 0;
-    margin: auto;
     width: 100%;
     height: 100px;
-    justify-content: space-between;
     background: #FFF;
-    color: rgba(0, 0, 0, 0.95);
+    color: #000;
     background-color: #F2F2F2; }
     .navbar__sub-container__top {
       display: flex;
       align-items: center;
       list-style: none; }
       .navbar__sub-container__top .navbar-hamburger {
-        margin-left: 30px;
+        margin-left: 330px;
         margin-right: 15px; }
         .navbar__sub-container__top .navbar-hamburger-logo {
           width: 28px; }
@@ -41,9 +39,9 @@ body {
         .navbar__sub-container__top .navbar-logo__img {
           width: 188px; }
     .navbar__sub-container__bottom {
-      margin-top: 105px;
       display: flex;
       justify-content: center;
+      margin-top: 105px;
       list-style: none; }
       .navbar__sub-container__bottom .navbar-list {
         font-size: 15px;
@@ -52,7 +50,7 @@ body {
         padding: 10px 16px;
         text-transform: uppercase; }
         .navbar__sub-container__bottom .navbar-list__link {
-          color: rgba(0, 0, 0, 0.95);
+          color: #000;
           text-decoration: none; }
           .navbar__sub-container__bottom .navbar-list__link:hover {
             color: #2a8da1; }
@@ -98,7 +96,7 @@ body {
           color: #49b8cf; }
   .main-container .main-content {
     font-family: "PT Serif",serif;
-    margin: 20px 50px;
+    margin: 20px 0px;
     max-width: 710px; }
     .main-container .main-content__paragraph {
       font-size: 18px;
@@ -194,15 +192,16 @@ body {
     width: 130%;
     font-family: "Lato", sans-serif;
     font-size: 20px;
-    line-height: 24px; }
+    line-height: 24px;
+    margin-bottom: 100px; }
     .main-container .more-stories__list {
       list-style: none;
-      width: 60%; }
+      width: 70%; }
       .main-container .more-stories__list__heading {
         font-family: "Lato", sans-serif;
         font-weight: 700;
         margin-bottom: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 17.5px;
         border-bottom: 1px solid #EEE; }
       .main-container .more-stories__list__items {
         font-weight: 700;
@@ -215,20 +214,19 @@ body {
     .main-container .more-stories__videos {
       display: flex;
       flex-wrap: wrap;
-      margin-left: 20px;
+      margin-left: 30px;
       width: 70%; }
       .main-container .more-stories__videos__heading {
         font-family: "Lato", sans-serif;
         font-size: 20px;
         line-height: 24px;
         flex-basis: 100%;
-        padding-bottom: 3px;
         border-bottom: 1px solid #EEE; }
       .main-container .more-stories__videos .figure__videos {
-        flex: 1 0 50%;
+        flex: 1 0 33%;
         margin-top: 15px; }
         .main-container .more-stories__videos .figure__videos__img {
-          width: 225px; }
+          width: 210px; }
         .main-container .more-stories__videos .figure__videos__caption {
           font-size: 20px;
           line-height: 24px;
@@ -240,26 +238,46 @@ body {
               text-decoration: underline; }
 
 .footer {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto;
-  border-top: 1px solid #9A9A9A; }
-  .footer .figure {
-    margin: 0 auto; }
-    .footer .figure__logo {
-      display: block;
-      margin-top: 2rem;
-      width: 200px;
-      margin-bottom: 1rem; }
-    .footer .figure__social {
-      width: 200px;
-      margin-bottom: 2rem; }
+  font-family: "PT Serif", sans-serif;
+  width: 70%;
+  margin: 0 200px;
+  border-top: 1px solid #EEE; }
+  .footer .figure__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }
+    .footer .figure__footer__logo {
+      display: inline-block;
+      width: 150px;
+      height: 100%; }
+    .footer .figure__footer__social {
+      display: inline-block;
+      width: 250px;
+      height: 100%; }
+  .footer__list {
+    display: flex;
+    font-size: 14px;
+    line-height: 14px;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 25px; }
+    .footer__list__items {
+      padding: 2px; }
+    .footer__list__link {
+      color: #000;
+      text-decoration: none; }
+      .footer__list__link:hover {
+        text-decoration: underline;
+        color: #49b8cf; }
   .footer .copyright {
-    width: 60%;
-    margin: 1rem auto;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 10px;
-    line-height: 20px;
-    color: #8b8d91; }
+    width: 100%; }
+    .footer .copyright__paragraph {
+      font-size: 12px;
+      line-height: 15px;
+      margin-top: 10px;
+      color: #000; }
+  .footer .figure__brand {
+    margin-top: 10px;
+    margin-bottom: 15px; }
+    .footer .figure__brand__img {
+      width: 100px; }
