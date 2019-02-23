@@ -69,7 +69,7 @@ body {
         /* Large Devices, Wide Screens */ }
         @media (max-width: 1024px) {
           .navbar__sub-container__top .navbar-hamburger {
-            margin: 12px 410px 5px 14px; } }
+            margin: 12px 340px 5px 14px; } }
         @media (max-width: 768px) {
           .navbar__sub-container__top .navbar-hamburger {
             margin-right: 300px; } }

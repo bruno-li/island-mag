@@ -41,7 +41,7 @@
                 margin-right: 15px;
                 // MEDIA QUERIES
                 @include respond(tab-port){
-                    margin: 12px 410px 5px 14px;
+                    margin: 12px 340px 5px 14px;
                 }
                 @include respond(phone){
                     margin-right: 300px;
