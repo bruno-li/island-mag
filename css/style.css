@@ -539,8 +539,7 @@ body {
         @media (max-width: 512px) {
           .main-container .more-stories__list__heading {
             font-size: 36px;
-            padding-bottom: 15px;
-            width: 600px; } }
+            padding-bottom: 15px; } }
       .main-container .more-stories__list__items {
         font-weight: 700;
         margin-bottom: 34px; }
