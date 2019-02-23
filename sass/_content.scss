@@ -5,9 +5,6 @@
     @include respond(tab-port){
         width: 90%;
     }
-    @include respond(small-phone){
-        width: 100%;
-    }
 
     // HEADER SECTION
 .header {
@@ -27,9 +24,6 @@
             &:hover{
                 text-decoration: underline;
             }
-            @include respond(small-phone){
-                font-size: 22px;
-            }
         }
     }
 
@@ -42,33 +36,26 @@
         margin-bottom: 4px;
         // MEDIA QUERIES
         @include respond(small-phone){
-            font-size: 58px;
-            line-height: 71px;
-            margin-top: 8px;
+            margin-top: 4px;
             margin-bottom: 20px;
         }
     }
     &__paragraph{
-        font-size: 24px;
+        font-size: 23px;
         line-height: 28px;
         color: #6d6e72;
-        // MEDIA QUERIES
-        @include respond(small-phone){
-            font-size: 38px;
-            line-height: 43px;
-            margin-bottom: 20px;
-        }
     }
 
     &__social-media {
         &__icons {
             width: 23%;
+            //MEDIA QUERIES 
             @include respond(small-phone){
-                width: 65%;
+                width: 100%;
             }
         }
         @include respond(small-phone){
-           margin-top: 20px;
+           margin-top: 10px;
         }   
     }
 
@@ -87,12 +74,6 @@
                 color: #49b8cf;
             }
         }
-
-        @include respond(small-phone){
-            font-size: 26px;
-            line-height: 24px;  
-            margin: 40px 0;      
-         }  
     }
 }
 
@@ -113,11 +94,6 @@
         line-height: 27px;
         margin: 30px 0;
         color: $color-primary-black;
-        // MEDIA QUERIES
-        @include respond(small-phone){
-            font-size: 30px;
-            line-height: 49px;     
-         }  
     }
 
 
@@ -134,11 +110,6 @@
             font-size: 20px;
             line-height: 24px;
             margin-bottom: 13px;
-
-            @include respond(small-phone){
-                font-size: 34px;
-                margin-bottom: 30px;
-             }  
         }
         
         &__image{
@@ -155,21 +126,12 @@
                 padding-bottom: 11px;
                 font-size: 16px;
                 line-height: 24px;
-            // MEDIA QUERIES
-            @include respond(small-phone){
-                font-size: 27px;
-                line-height: 42px;
-             } 
             }
             &__credit{
                 font-size: 14px;
                 line-height: 14px;
                 font-style: italic;
                 // MEDIA QUERIES
-                @include respond(small-phone){
-                    font-size: 22px;
-                    line-height: 38px;
-                 } 
             }
         }
     }
@@ -181,29 +143,25 @@
         max-width: 680px;
         font-family: "Lato", sans-serif;
         margin: 50px 0;
-
+        // MEDIA QUERIES
         @include respond(small-phone){
-            height: 570px;
-            margin-top: 100px;
+            align-items: flex-start;
         }
 
         &__figure{
-            align-self: flex-start;
+            // align-self: flex-start;
             &__heading{
                 font-size: 24px;
                 line-height: 29px;
                 color: #373b40;
                 margin-bottom: 10px;
-                @include respond(small-phone){
-                    font-size: 38px;
-                    margin-bottom: 24px;
-                 } 
             }
             &__img{
                 width: 290px;
+                //MEDIA QUERIES 
                 @include respond(small-phone){
-                    width: 100%;
-                 } 
+                    max-width: 145px;
+                } 
                 
             }
         }
@@ -215,12 +173,10 @@
                 font-family: "PT Serif", sans-serif;
                 font-size: 15px;
                 line-height: 23px;
-
-                @include respond(small-phone){
-                    font-size: 22px;
-                    margin-bottom: 12px;
+                // MEDIA QUERIES
+                 @include respond(small-phone){
+                    margin-top: 36px;
                  } 
-
                 &__link{
                     text-decoration: none;
                     color: #49b8cf;
@@ -240,11 +196,7 @@
                     &:hover{
                         text-decoration: underline;
                     }
-                    // MEDIA QUERIES
-                    @include respond(small-phone){
-                        font-size: 34px;
-                        line-height: 38px;
-                     } 
+          
                 }
             }
 
@@ -252,14 +204,7 @@
                 font-family: "PT Serif", sans-serif;
                 font-size: 14px;
                 line-height: 21px;
-                color: $color-primary-black;
-
-              // MEDIA QUERIES
-              @include respond(small-phone){
-                font-size: 23px;
-                line-height: 36px;
-                margin-top: 10px;
-             }              
+                color: $color-primary-black;            
             }
         }
 
@@ -277,38 +222,41 @@
             border-bottom: 1px solid #EEE;
             padding-bottom: 8px;
             width: 100%;
+            //MEDIA QUERIES 
             @include respond(phone){
                 width: 720px;
             }
             @include respond(small-phone){
-               font-size: 36px;
+               font-size: 22px;
                padding-bottom: 15px;
                width: 100%;
             }
         }
         
-
         &__figure__container{
             display: flex;   
+            // MEDIA QUERIES
             @include respond(small-phone){
                 flex-direction: column;
             }
-    
         }
 
         &__figure{
             margin: 10px 20px 10px 0;
+            //MEDIA QUERIES 
             @include respond(small-phone){
                 display: flex;
-                padding-bottom: 20px;
+                padding-bottom: 10px;
                 &:not(:last-child){
                     border-bottom: 1px solid #EEE;
                 }
             }
             &__img{
                 width: 100%;
+              //MEDIA QUERIES 
                 @include respond(small-phone){
-                    width:  60%;
+                    width:  40%;
+                    margin-left: 1rem;
                     height: 100%;
                 }
             }
@@ -316,11 +264,11 @@
                 font-size: 18px;
                 line-height: 24px;
                 font-weight: 700;
-                padding-top: 3px;
+                // MEDIA QUERIES
                 @include respond(small-phone){
                     margin-left: 10px;
-                    font-size: 32px;
-                    line-height: 42px;
+                    width: 100%;
+                   
                 }
             }
         }
@@ -347,22 +295,15 @@
 
         &__list{
             list-style: none;    
-        
             // MEDIA QUERIES
             @include respond(tab-port){
                 font-size: 19px;
                 width: 42%;
-                line-height: 23px;
+                // line-height: 23px;
             }
             @include respond(phone){
                 width: 100%;
             }
-
-            @include respond(small-phone){
-                font-size: 32px;
-                line-height: 42px;
-            }
-
             &__heading{
                 font-family: "Lato", sans-serif;
                 font-weight: 700;
@@ -374,9 +315,8 @@
                     padding-bottom: 5px;
                 }
                 @include respond(small-phone){
-                    font-size: 36px;
-                    padding-bottom: 15px;
-                    // width: 600px;
+                    font-size: 22px;
+                    padding-bottom: 10px;
                  }
 
             }
@@ -384,6 +324,10 @@
             &__items{
                 font-weight: 700;
                 margin-bottom: 34px;
+                // MEDIA QUERIES
+                @include respond(small-phone){
+                    margin-bottom: 28px;
+                }
 
                 &__link{
                     text-decoration: none;
@@ -411,6 +355,9 @@
                 margin-left: 0;
                 width: 100%;
             }
+            @include respond (small-phone){
+                flex-direction: column;
+            }
             
             &__heading{
                 font-family: "Lato", sans-serif;
@@ -422,10 +369,6 @@
                    // MEDIA QUERIES
                    @include respond(tab-port){
                    padding-bottom: 5px;
-                }
-                @include respond(small-phone){
-                    font-size: 32px;
-                    padding-bottom: 20px;
                 }
             }
 

@@ -5,6 +5,10 @@
     height: 40px;
     background: #fff;
     border-bottom: 1px solid #F2F2F2;
+    // MEDIA QUERIES
+    @include respond(small-phone){
+        height: 0;
+    }
     
     // SUB CONTAINER
     &__sub-container {
@@ -24,7 +28,7 @@
             height: 60px;
         }
         @include respond(small-phone){
-            height: 95px;
+            height: 62px;
         }
         // TOP NAVBAR
         &__top {
@@ -47,6 +51,7 @@
                 }
                 &-logo {
                     width: 40px;
+                    //MEDIA QUERIES 
                     @include respond(small-phone){
                         width: 40px;
                         margin-left: 10px;
