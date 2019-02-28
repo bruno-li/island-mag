@@ -38,8 +38,7 @@
         font-size: 14px;
         line-height: 14px;
         list-style: none;
-        margin-top: 20px;
-        margin-bottom: 25px;
+        margin: 20px 0 25px 0;
         // MEDIA QUERIES
         @include respond(small-phone){
             flex-wrap: wrap;
@@ -57,7 +56,6 @@
             }
         }
     }
-    
 
     .copyright{
         width: 100%;
@@ -70,8 +68,7 @@
     }
 
     .figure__brand{
-        margin-top: 10px;
-        margin-bottom: 15px;
+        margin: 10px 0 15px 0;
         &__img{
             width: 100px;
         }
